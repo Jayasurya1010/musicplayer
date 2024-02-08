@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+        <div class="contianer flex " >
+            <div class="left  bg-black rounded" >
+                <div class="close">
+                    <img src="./assests/close.svg" alt="">
+                </div>
+                  
+                <div class="home bg-grey rounded m-1 " >
+                    <div class="logo"><img src="./assests/spotify-removebg-preview.png" alt="logo" height="30px" width="30px"></div>
+                    <ul>
+                        <li><img class="invert" src="./assests/home.svg" alt="home" >Home</li>
+                        <li><img  class="invert" src="./assests/search.svg" alt="search">Search</li>
+                    </ul>
+                </div>
+                <div class="library bg-grey rounded m-1 " >
+                    <div class="flex items-center">
+                        <img class="librarysvg invert"src="./assests/library.svg">
+                        <h1 class="librarytxt invert">Your Library</h1>
+
+                    </div>
+                    <div class="create_playlist">
+                        <p>Create your playlist</p>
+                        <button class="btn m-3">Create Playlist</button>
+
+                    </div>
+                    <div class="songlist">
+                        <ul>
+                           
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                
+               
+                
+            </div>
+            <div class="right  rounded bg-grey">
+              <div class="header ">
+                <div class="hamburgercontainer " style="text-align: center;gap: 30px; ">
+                    <img class="hamburger" src="./assests/hambuger.svg" alt=""  height="30px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35"   viewBox="0 0 24 24" fill="none">
+                        <path d="M15 6L9 12L15 18" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="16"/>
+                        </svg> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 24 24" fill="none">
+                            <path d="M9.00005 6L15 12L9 18" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="16"/>
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="authbtn">Sign up</button>
+                    <button class="authbtn">Log in</button>
+                </div>
+                
+              </div>
+              <div class="flex audiotype sticky">
+                <button>All</button>
+                <button>Music</button>
+                
+              </div>
+              <div class="spotifyplaylists">
+                <h3>Spotify Playlists</h3>
+                <div class="cardcontainer  rounded">
+                    
+                    
+
+                    
+
+                </div>
+                </div>
+                
+
+              </div>
+              
+            </div>
+
+
+            
+            
+            
+            
+            <div class="playbar  rounded flex ">
+               <div  class=" playbardiv1 " >
+                <div class=" infoimage">
+
+                </div>
+                <div class="information ">
+                 
+                </div>
+
+               </div>
+
+               <div class=" playbardiv2 desktop">
+                
+
+                <div class="playerbuttons ">
+                    <img id="previous" src="./assests/previous.svg" alt="previous">
+                    <img id="play" src="./assests/play.svg" alt="surya">
+                    <img  id="next"src="./assests/next.svg" alt="next">
+                 </div>
+                 <div class="flex " style="justify-content: space-between;">
+                    <div class="songtime1 " style="width: 50px; margin-top: 0px;">00:00</div>
+                 <div class="seekbar">
+                    
+                    
+                    <div class="circle"></div>
+                    
+                </div>
+                <div class="songtime2" style="width: 50px; margin-top: 0px;">00:00</div>
+                 </div>
+
+               </div>
+               <div class="playbardiv3  desktop">
+                <div style="display: flex;justify-content: center;">
+                    <div><img  class="volumehigh"  style="margin: 10px 20px;" src="./volumehigh.svg" alt="">
+                        
+                    
+                </div>
+                <div class="range " style="margin: 3px 20px;">
+                    <input type="range" id="customRange" class="custom-range"    oninput="updateRangeValue()">
+                   <span id="rangeValue"></span>
+                </div>
+                </div>
+
+               </div>
+
+               <div class="playerbardiv4 mobile">
+                <div class=" ">
+                            
+                        
+                        <div class="mobileseekbar">
+                            
+                           <div class="mobilecircle"></div>
+                          
+                       </div>
+                       <div class="flex">
+                        
+                         <div class=" mobilesongimage"></div>
+                         <div class="mobileinformationofsong "></div>
+                       
+                       
+                          <div class="mobileplayerbuttons mobile  ">
+                        <img id="mobileprevious" src="./assests/previous.svg" alt="previous">
+                        <img id="mobileplay" src="./assests/play.svg" alt="surya">
+                        <img  id="mobilenext"src="./assests/next.svg" alt="next">
+                     </div>
+                       </div>
+                     
+    
+                   </div>
+               </div>
+
+               
+
+
+
+            </div>
+        
+
+        
+    
+    
+</body>
+<script src="./script.js"></script>
+</html>

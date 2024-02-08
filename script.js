@@ -21,6 +21,7 @@ async function getSongs(folder){
     let a = await fetch(`/${folder}`)
     
     let response = await a.text();
+    console.log(response)
     
     
     let div =document.createElement("div")
